@@ -16,7 +16,7 @@
   if(!seen&&!reduced){
     root.classList.add('intro-active');
     if(root.classList.contains('motion-reduced')||matchMedia('(prefers-reduced-motion: reduce)').matches)root.classList.add('intro-reduced');
-    window.__sittelleIntroSafety=setTimeout(finish,7000);
+    window.__sittelleIntroSafety=setTimeout(finish,12000);
   }
   document.addEventListener('click',event=>{
     if(!event.target.closest?.('[data-intro-skip]'))return;
