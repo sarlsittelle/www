@@ -1,4 +1,4 @@
 {
-  "_help": "Where the brief form sends quote requests (RaaS platform). Local test: http://localhost:8080/api/sittelle/request. Production: https://<api-host>/api/sittelle/request — set it BEFORE publishing. Empty = the form only downloads the brief.",
-  "endpoint": "http://localhost:8080/api/sittelle/request"
+  "_help": "Where the quote form sends requests. On Cloudflare, once the Resend key is set, use \"/api/sittelle/request\". Empty = the form only downloads the brief. See CONTENT.md.",
+  "endpoint": ""
 }
