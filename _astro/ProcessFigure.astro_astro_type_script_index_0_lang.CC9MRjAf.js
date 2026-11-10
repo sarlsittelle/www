@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["_astro/process-figure.DWA15f0G.js","_astro/ScrollTrigger.CHfANB6y.js"])))=>i.map(i=>d[i]);
+import{t as e}from"./preload-helper.bQXln2oX.js";var t=()=>{e(()=>import(`./process-figure.DWA15f0G.js`),__vite__mapDeps([0,1]))},n=()=>{`requestIdleCallback`in window?requestIdleCallback(t,{timeout:2e3}):setTimeout(t,200)};document.readyState===`complete`?n():window.addEventListener(`load`,n,{once:!0});

@@ -11,7 +11,8 @@
     try{sessionStorage.setItem(key,'seen');}catch{}
     document.querySelectorAll('[data-intro-inert]').forEach(node=>{node.inert=false;node.removeAttribute('data-intro-inert');});
   };
-  const reduced=root.classList.contains('motion-reduced')||matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const saveData=navigator.connection?.saveData===true;
+  const reduced=saveData||root.classList.contains('motion-reduced')||matchMedia('(prefers-reduced-motion: reduce)').matches;
   if(reduced)finish();
   if(!seen&&!reduced){
     root.classList.add('intro-active');
